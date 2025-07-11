@@ -1,0 +1,9 @@
+[2025-04-24 10:00:00] INFO: User john logged in successfully from 192.168.1.100
+[2025-04-24 10:01:15] ERROR: Authentication failed for user guest from 192.168.1.101
+[2025-04-24 10:01:30] ERROR: Authentication failed for user 'guest' from 192.168.1.101
+[2025-04-24 10:02:00] ERROR: Authentication failed for user 'guest' from 192.168.1.101
+[2025-04-24 10:05:45] WARNING: Potential SQL injection attempt detected in query: SELECT * FROM users WHERE username = 'admin' OR '1'='1';
+[2025-04-24 10:07:20] INFO: File 'report.pdf' accessed by user jane' from 192.168.1.102
+[2025-04-24 10:10:30] WARNING: Possible cross-site scripting (XSS) vulnerability in input: <script>alert('hacked')</script>
+[2025-04-24 10:15:00] INFO: Connection established with server at 10.0.0.5:80
+[2025-04-24 10:20:45] WARNING: Detected multiple SYN packets from 192.168.1.105 (potential port scan)

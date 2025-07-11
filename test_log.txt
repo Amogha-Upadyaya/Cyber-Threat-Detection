@@ -1,0 +1,20 @@
+[2025-04-24 10:00:00] INFO: User alice logged in successfully from 192.168.1.200
+[2025-04-24 10:01:15] ERROR: Authentication failed for user bob from 192.168.1.201
+[2025-04-24 10:01:30] ERROR: Authentication failed for user bob from 192.168.1.201
+[2025-04-24 10:01:45] ERROR: Authentication failed for user bob from 192.168.1.201
+[2025-04-24 10:02:00] ERROR: Authentication failed for user bob from 192.168.1.201
+[2025-04-24 10:02:15] ERROR: Authentication failed for user bob from 192.168.1.201
+[2025-04-24 10:03:00] INFO: User charlie logged in successfully from 10.0.0.10
+[2025-04-24 10:05:45] WARNING: Potential SQL injection attempt detected in query: SELECT * FROM users WHERE username = 'test' OR 1=1;
+[2025-04-24 10:07:20] INFO: File 'data.csv' accessed by user david from 192.168.1.202
+[2025-04-24 10:10:30] WARNING: Possible cross-site scripting (XSS) vulnerability in input: <script>alert("attack")</script>
+[2025-04-24 10:12:00] INFO: User eve logged out from 10.0.0.20
+[2025-04-24 10:15:00] WARNING: Detected SYN flood attack from 192.168.1.205
+[2025-04-24 10:16:00] WARNING: Detected UDP flood attack from 192.168.1.205
+[2025-04-24 10:17:00] WARNING: Possible directory traversal attempt: /../../etc/passwd
+[2025-04-24 10:20:45] INFO: Connection closed with server at 10.0.0.5:8080
+[2025-04-24 10:25:00] ERROR: Authentication failed for user root from 192.168.1.210
+[2025-04-24 10:25:15] ERROR: Authentication failed for user root from 192.168.1.210
+[2025-04-24 10:25:30] ERROR: Authentication failed for user root from 192.168.1.210
+[2025-04-24 10:25:45] ERROR: Authentication failed for user root from 192.168.1.210
+[2025-04-24 10:26:00] INFO: User frank logged in successfully from 10.0.1.100

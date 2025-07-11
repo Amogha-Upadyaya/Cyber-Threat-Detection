@@ -1,0 +1,61 @@
+Successfully opened log file: {log_file_path}
+Successfully opened log file: test_log.txt
+Parsing line: '[2025-04-24 10:00:00] INFO: User alice logged in successfully from 192.168.1.200'
+  Parsed: timestamp=2025-04-24 10:00:00, message='User alice logged in successfully from 192.168.1.200'
+Parsing line: '[2025-04-24 10:01:15] ERROR: Authentication failed for user bob from 192.168.1.201'
+  Parsed: timestamp=2025-04-24 10:01:15, message='Authentication failed for user bob from 192.168.1.201'
+Parsing line: '[2025-04-24 10:01:30] ERROR: Authentication failed for user bob from 192.168.1.201'
+  Parsed: timestamp=2025-04-24 10:01:30, message='Authentication failed for user bob from 192.168.1.201'
+Parsing line: '[2025-04-24 10:01:45] ERROR: Authentication failed for user bob from 192.168.1.201'
+  Parsed: timestamp=2025-04-24 10:01:45, message='Authentication failed for user bob from 192.168.1.201'
+Parsing line: '[2025-04-24 10:02:00] ERROR: Authentication failed for user bob from 192.168.1.201'
+  Parsed: timestamp=2025-04-24 10:02:00, message='Authentication failed for user bob from 192.168.1.201'
+Parsing line: '[2025-04-24 10:02:15] ERROR: Authentication failed for user bob from 192.168.1.201'
+  Parsed: timestamp=2025-04-24 10:02:15, message='Authentication failed for user bob from 192.168.1.201'
+Parsing line: '[2025-04-24 10:03:00] INFO: User charlie logged in successfully from 10.0.0.10'
+  Parsed: timestamp=2025-04-24 10:03:00, message='User charlie logged in successfully from 10.0.0.10'
+Parsing line: '[2025-04-24 10:05:45] WARNING: Potential SQL injection attempt detected in query: SELECT * FROM users WHERE username = 'test' OR 1=1;'
+  Parsed: timestamp=2025-04-24 10:05:45, message='Potential SQL injection attempt detected in query: SELECT * FROM users WHERE username = 'test' OR 1=1;'
+Parsing line: '[2025-04-24 10:07:20] INFO: File 'data.csv' accessed by user david from 192.168.1.202'
+  Parsed: timestamp=2025-04-24 10:07:20, message='File 'data.csv' accessed by user david from 192.168.1.202'
+Parsing line: '[2025-04-24 10:10:30] WARNING: Possible cross-site scripting (XSS) vulnerability in input: <script>alert("attack")</script>'
+  Parsed: timestamp=2025-04-24 10:10:30, message='Possible cross-site scripting (XSS) vulnerability in input: <script>alert("attack")</script>'
+Parsing line: '[2025-04-24 10:12:00] INFO: User eve logged out from 10.0.0.20'
+  Parsed: timestamp=2025-04-24 10:12:00, message='User eve logged out from 10.0.0.20'
+Parsing line: '[2025-04-24 10:15:00] WARNING: Detected SYN flood attack from 192.168.1.205'
+  Parsed: timestamp=2025-04-24 10:15:00, message='Detected SYN flood attack from 192.168.1.205'
+Parsing line: '[2025-04-24 10:16:00] WARNING: Detected UDP flood attack from 192.168.1.205'
+  Parsed: timestamp=2025-04-24 10:16:00, message='Detected UDP flood attack from 192.168.1.205'
+Parsing line: '[2025-04-24 10:17:00] WARNING: Possible directory traversal attempt: /../../etc/passwd'
+  Parsed: timestamp=2025-04-24 10:17:00, message='Possible directory traversal attempt: /../../etc/passwd'
+Parsing line: '[2025-04-24 10:20:45] INFO: Connection closed with server at 10.0.0.5:8080'
+  Parsed: timestamp=2025-04-24 10:20:45, message='Connection closed with server at 10.0.0.5:8080'
+Parsing line: '[2025-04-24 10:25:00] ERROR: Authentication failed for user root from 192.168.1.210'
+  Parsed: timestamp=2025-04-24 10:25:00, message='Authentication failed for user root from 192.168.1.210'
+Parsing line: '[2025-04-24 10:25:15] ERROR: Authentication failed for user root from 192.168.1.210'
+  Parsed: timestamp=2025-04-24 10:25:15, message='Authentication failed for user root from 192.168.1.210'
+Parsing line: '[2025-04-24 10:25:30] ERROR: Authentication failed for user root from 192.168.1.210'
+  Parsed: timestamp=2025-04-24 10:25:30, message='Authentication failed for user root from 192.168.1.210'
+Parsing line: '[2025-04-24 10:25:45] ERROR: Authentication failed for user root from 192.168.1.210'
+  Parsed: timestamp=2025-04-24 10:25:45, message='Authentication failed for user root from 192.168.1.210'
+Parsing line: '[2025-04-24 10:26:00] INFO: User frank logged in successfully from 10.0.1.100'
+  Parsed: timestamp=2025-04-24 10:26:00, message='User frank logged in successfully from 10.0.1.100'
+Total log entries processed: 20
+  Failed login attempt detected from IP: 192.168.1.201 at 2025-04-24 10:01:15
+  Failed login attempt detected from IP: 192.168.1.201 at 2025-04-24 10:01:30
+  Failed login attempt detected from IP: 192.168.1.201 at 2025-04-24 10:01:45
+[2025-04-24 10:01:45] ALERT: Multiple failed login attempts detected from IP: 192.168.1.201
+  Failed login attempt detected from IP: 192.168.1.201 at 2025-04-24 10:02:00
+  Failed login attempt detected from IP: 192.168.1.201 at 2025-04-24 10:02:15
+  Failed login attempt detected from IP: 192.168.1.210 at 2025-04-24 10:25:00
+  Failed login attempt detected from IP: 192.168.1.210 at 2025-04-24 10:25:15
+  Failed login attempt detected from IP: 192.168.1.210 at 2025-04-24 10:25:30
+[2025-04-24 10:25:30] ALERT: Multiple failed login attempts detected from IP: 192.168.1.210
+  Failed login attempt detected from IP: 192.168.1.210 at 2025-04-24 10:25:45
+  Keyword 'SQL injection' found in message: 'Potential SQL injection attempt detected in query: SELECT * FROM users WHERE username = 'test' OR 1=1;' at 2025-04-24 10:05:45
+[2025-04-24 10:05:45] ALERT: Potential threat keyword detected: SQL injection - Potential SQL injection attempt detected in query: SELECT * FROM users WHERE username = 'test' OR 1=1;
+  Keyword 'XSS' found in message: 'Possible cross-site scripting (XSS) vulnerability in input: <script>alert("attack")</script>' at 2025-04-24 10:10:30
+[2025-04-24 10:10:30] ALERT: Potential threat keyword detected: XSS - Possible cross-site scripting (XSS) vulnerability in input: <script>alert("attack")</script>
+  Keyword 'directory traversal' found in message: 'Possible directory traversal attempt: /../../etc/passwd' at 2025-04-24 10:17:00
+[2025-04-24 10:17:00] ALERT: Potential threat keyword detected: directory traversal - Possible directory traversal attempt: /../../etc/passwd
+Analysis complete.
